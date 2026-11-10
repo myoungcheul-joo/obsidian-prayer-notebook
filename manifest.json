@@ -1,0 +1,10 @@
+{
+  "id": "prayer-notebook",
+  "name": "Prayer Notebook",
+  "version": "0.2.0",
+  "minAppVersion": "1.4.4",
+  "description": "Keep prayer requests as notes, pray through them one card at a time, and record answered prayers. Korean interface.",
+  "author": "Myoungcheul Joo",
+  "authorUrl": "https://pkm-institute.netlify.app",
+  "isDesktopOnly": false
+}

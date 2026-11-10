@@ -1,0 +1,45 @@
+/* 기도수첩 */
+.pn-view { padding: 10px 12px; }
+.pn-head { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 6px; }
+.pn-head h3 { margin: 4px 0; }
+.pn-head-btns { display: flex; gap: 6px; }
+.pn-tabs { display: flex; gap: 4px; margin: 10px 0 8px; border-bottom: 1px solid var(--background-modifier-border); }
+.pn-tab { background: transparent !important; box-shadow: none !important; border-radius: 0; border-bottom: 2px solid transparent; padding: 4px 10px; color: var(--text-muted); }
+.pn-tab.is-active { color: var(--text-normal); border-bottom-color: var(--interactive-accent); font-weight: 600; }
+.pn-filters { display: flex; gap: 6px; margin-bottom: 10px; }
+.pn-filters input { flex: 1; min-width: 0; }
+.pn-list { display: flex; flex-direction: column; gap: 8px; }
+.pn-empty { color: var(--text-muted); padding: 16px 4px; text-align: center; }
+.pn-card { border: 1px solid var(--background-modifier-border); border-radius: 8px; padding: 8px 10px; background: var(--background-primary); }
+.pn-card.is-answered { opacity: .85; border-left: 3px solid var(--color-green); }
+.pn-card-top { display: flex; align-items: center; gap: 6px; flex-wrap: wrap; }
+.pn-title { font-weight: 600; color: var(--text-normal); text-decoration: none; cursor: pointer; }
+.pn-title:hover { text-decoration: underline; }
+.pn-badge { font-size: var(--font-ui-smaller); padding: 1px 6px; border-radius: 10px; background: var(--background-modifier-hover); color: var(--text-muted); }
+.pn-evan { background: rgba(201,103,48,.15); color: #c96730; }
+.pn-meta { font-size: var(--font-ui-smaller); color: var(--text-muted); margin-top: 3px; }
+.pn-answer { margin-top: 5px; font-size: var(--font-ui-small); color: var(--color-green); }
+.pn-actions { display: flex; gap: 6px; margin-top: 6px; }
+.pn-actions button { font-size: var(--font-ui-small); padding: 2px 10px; }
+.pn-modal .pn-textarea { width: 100%; margin: 6px 0; resize: vertical; }
+.pn-sub { color: var(--text-muted); margin-bottom: 8px; }
+.pn-note { font-size: var(--font-ui-smaller); color: var(--text-muted); }
+/* 기도 모드 */
+.pn-mode .modal-content { display: flex; flex-direction: column; align-items: stretch; }
+.pn-mode-count { text-align: center; color: var(--text-muted); font-size: var(--font-ui-small); }
+.pn-mode-card { text-align: center; padding: 24px 12px; min-height: 220px; display: flex; flex-direction: column; justify-content: center; gap: 8px; }
+.pn-mode-card h2 { margin: 4px 0; font-size: 1.6em; line-height: 1.35; }
+.pn-mode-badges { display: flex; gap: 6px; justify-content: center; }
+.pn-mode-target { font-size: 1.15em; color: var(--text-accent); }
+.pn-mode-body { white-space: pre-wrap; color: var(--text-normal); line-height: 1.6; }
+.pn-mode-meta { color: var(--text-faint); font-size: var(--font-ui-smaller); }
+.pn-mode-nav { display: flex; justify-content: space-between; gap: 8px; }
+.pn-mode-nav button { flex: 1; padding: 10px 0; font-size: 1.05em; }
+/* 휴대폰 */
+.is-mobile .pn-view { padding: 8px; }
+.is-mobile .pn-head-btns button, .is-mobile .pn-actions button { padding: 8px 14px; font-size: var(--font-ui-medium); }
+.is-mobile .pn-tab { padding: 8px 12px; }
+.is-mobile .pn-card { padding: 12px; }
+.is-mobile .pn-title { font-size: 1.1em; }
+.is-mobile .pn-mode-card h2 { font-size: 1.8em; }
+.is-mobile .pn-mode-nav button { padding: 14px 0; font-size: 1.1em; }
